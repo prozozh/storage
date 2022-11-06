@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<!--<table> - содержит таблицу-->
+		<table>
+			<!-- tr (table row) - строка t -->
+			<tr>
+				<!-- td (table data) ячейка с данными-->
+				<td>один</td>
+				<td>два</td>
+			</tr>
+			<tr>
+				<td>три</td>
+				<td>четыре</td>
+				<td>пять</td>
+			</tr>
+		</table>
+		<br>
+		<!--<table> - содержит таблицу атрибут border создаёт границы (устаревший)-->
+		<table border="1">
+			<!-- To add titles to rows and columns, you can use the table heading element: <th>.
+			scope - имеет 2 параметра, указывает столбец col или строка row-->
+			<tr>
+				<th></th>
+				<th scope="col">1</th>
+				<th scope="col">2</th>
+				<th scope="col">3</th>				
+			</tr>
+			<tr>
+				<th scope="row">1 строка</th>
+				<td>один</td>
+				<td>два</td>
+				<!--rowspan объединяет указанное количество строк-->
+				<td rowspan="2">пять</td>
+			</tr>
+			<tr>
+				<th scope="row">2 строка</th>
+				<td>три</td>
+				<td>четыре</td>
+				
+			</tr>
+			<tr>
+			<!--colspan - объединяет указаное количество столбцов-->
+				<th scope="row">3 строка</th>
+				<td>шесть</td>
+				<td colspan="2">семь и восемь</td>
+				
+			</tr>
+		</table>
+		<br>
+	<table border="1">
+	
+  <!-- thead - отделяет заголовок таблицы -->
+  <thead>
+    <tr>
+      <th></th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+	</thead>
+	<!-- tbody - разделяет таблицу на секции-->
+  <tbody>
+    <tr>
+      <th>Morning</th>
+      <td rowspan="2">Work</td>
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th>Afternoon</th>
+    </tr>
+	<tr>
+      <th>Evening</th>
+      <td>Dinner</td>
+    </tr>
+	</tbody>
+	<!--tfoot обозначает (отделяет) последнюю строку таблицы-->
+	<tfoot>
+      <th>Evening</th>
+      <td>Dinner</td>
+    </tfoot>
+</table>
+		
+	</body>
+</html>
+<!---->

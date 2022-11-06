@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!--объявление типа документа -->
+<html>
+<!--head содержит метаданны (данные о сайте) -->
+<head>
+	<!--title название вкладки -->
+	<title>Мдведь</title>
+</head>
+	<body width  bgcolor="#000" background="images/road.jpg" width="500" height="800">
+		<h1 id="top">"Hello  World!"</h1>
+		<!-- <img src="images/road.jpg"> -->
+		<!-- параграф -->
+		<a href="#bottom"><h2>В конец<h2></a>
+		<p>paraagraph</p>
+		<em>курсив</em>
+		<strong>жирный</strong>
+		<p><span>кусочек </span>текста</p>
+		<div>
+			<!--разрыв строки -->
+			<br>
+			<!--беспорядочный список -->
+			<ul>
+				<!--элементы списка -->
+				<li>один</li>
+				<li>два</li>
+				<li>три</li>
+			</ul><br>
+			<!--нумерованный список Ordered Lists -->
+			<ol>
+				<li>один</li>
+				<li>два</li>
+				<li>три</li>
+			</ol><br>
+			<!--подключение исунка -->
+			<img src="images/road.jpg" 
+				width="300" 
+				height="300" 
+				alt="текст показаный вместо картинки для SEO" /><br>
+			<!-- подключение видео (controls) - даёт элементы управления видосом-->
+			<video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" 
+				width="320" 
+				height="240" 
+				controls>
+				Video not supported
+			</video><br>
+			<!--пример ссылки с атрибутом href - hyperlink reference, target=black - открыть в новой вкладке -->
+			<a href="https://www.wikipedia.org/" target="_blank">This Is A Link To Wikipedia</a><br>
+			<!--относительная адресация ссылок The ./ in ./index.html tells the browser to look for the file in the current folder-->
+			<a href="about.html">О нас</a><br>
+			<a href="./folder/contact.html">Контакты</a><br>
+			<!--изображение как ссылка-->
+			<a href="https://ru.wikipedia.org/wiki/Зайцы"><img src="./images/bunny.png" alt="зайцы"/></a><br>
+			<!--адресация по странице по id-->
+			<h1 id="bottom">Конец</h1>
+			<a href="#top"><h2>В начало</h2></a>
+		</div>
+	</body>
+	<!---->
+</html>
